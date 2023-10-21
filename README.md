@@ -8,7 +8,7 @@ This repository contains ***the source code and data***.
 ![Framework of MetaCPI](FRAMEWORK.png)
 
 ## Dependencies
-Dependencies can be founded in **environment.yml**.
+Dependencies can be found in **environment.yml**.
 
 ## Data
 
