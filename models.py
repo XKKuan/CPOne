@@ -104,7 +104,7 @@ class MetaD(nn.Module):
         super(MetaD, self).__init__()
 
         self.drugmeta = drugmeta
-        self.druglearner = DrugLearner(model = druglearner,out_dim = in_dim_drug, drop_ratio = drop_ratio,gcn_numlayer = 5,gcn_pool = 'mean',gcn_emb_dim = 600)
+        self.druglearner = DrugLearner(model = druglearner,out_dim = in_dim_drug, drop_ratio = drop_ratio,gcn_numlayer = 5,gcn_pool = 'mean',gcn_emb_dim = 300)
         self.targetlearner = TargetLearner(out_dim = in_dim_target, drop_ratio = drop_ratio)
         self.inner_lr =inner_lr
         self.inner_loss_func = nn.CrossEntropyLoss()
